@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.container-header {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-logo {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  height: 10vh;
+}
+.logo {
+  width: 40px;
+}
+.titolo {
+}
+.container-bottoni {
+  display: flex;
+}
+.container-bottone {
+  margin-right: 20px;
+}
+#play {
+  padding: 2px 20px;
+  border: solid 1px black;
+  border-radius: 5px;
+  font-size: large;
+}
+.seleziona-difficoltà {
+  margin-right: 10px;
+}
+#difficoltà {
+  padding: 2px 15px;
+  border: solid 1px black;
+  border-radius: 5px;
+  font-size: large;
+}
+.seleziona-difficoltà :hover {
+  cursor: pointer;
+}
+.container-bottone :hover {
+  cursor: pointer;
+}
+.container {
+  height: 90vh;
+  background-color: rgb(106, 106, 156);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#grid {
+  width: 40%;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+.square {
+  width: 10%;
+  height: 45px;
+  background-color: rgb(181, 181, 214);
+  border: solid 1px rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+.bomb {
+  background-color: red;
+}
+/* .square-diff {
+  width: 11%;
+  height: 45px;
+  background-color: rgb(106, 106, 156);
+  border: solid 1px rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+} */
+.clicked {
+  background-color: aqua;
+}
+
+#grid :hover {
+  cursor: pointer;
+}
