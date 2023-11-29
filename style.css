@@ -62,6 +62,7 @@
   display: flex;
   flex-wrap: wrap;
 }
+
 .square {
   width: 10%;
   height: 45px;

@@ -14,16 +14,17 @@ buttonPlay.addEventListener(
     for (let i = 0; i < 100; i++) {
       const newElement = createMyElement("div", "square");
       gridElement.append(newElement);
-      console.log(i);
       newElement.append(i);
       newElement.addEventListener("click", function () {
+        let punteggio = document.querySelectorAll("#grid .clicked").length;
         if (newArrNum.includes(i)) {
           newElement.classList.add("bomb");
+          alert(`HAI PERSO. il tuo punteggio è ${punteggio}`);
         } else {
           this.classList.add("clicked");
+          console.log(punteggio);
         }
       });
-      gridElement.append(newElement);
     }
   },
   { once: true }
